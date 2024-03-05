@@ -1,0 +1,44 @@
+[
+  {
+    "task": "Äta",
+    "category": "ux",
+    "status": "to do",
+    "assigned": "",
+    "id": 1709655532412
+  },
+  {
+    "task": "Sova",
+    "category": "devBackend",
+    "status": "in progress",
+    "assigned": "Kandice",
+    "id": 1709655536229
+  },
+  {
+    "task": "Köra",
+    "category": "devFrontend",
+    "status": "done",
+    "assigned": "Konstans",
+    "id": 1709655540143
+  },
+  {
+    "task": "Bil",
+    "category": "ux",
+    "status": "in progress",
+    "assigned": "Filip",
+    "id": 1709655546544
+  },
+  {
+    "task": "Person",
+    "category": "ux",
+    "status": "done",
+    "assigned": "Petson",
+    "id": 1709655549783
+  },
+  {
+    "task": "Scrumb",
+    "category": "devFrontend",
+    "status": "in progress",
+    "assigned": "Scragy",
+    "id": 1709655581860
+  }
+]
