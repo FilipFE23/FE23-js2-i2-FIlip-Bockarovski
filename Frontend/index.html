@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./main.js" type="module" defer></script>
+    <title>Document</title>
+  </head>
+  <body id="body">
+    <header id="header">
+      <!-- Title -->
+      <h1 class="centerDiv webTitle">Scrum Board</h1>
+
+      <!-- Task Form -->
+      <form id="taskInputForm" class="centerDiv inputForm">
+        <input id="taskInput" type="text" placeholder="Enter task" required />
+        <select>
+          <option value="ux">UX</option>
+          <option value="devBackend">Dev Backend</option>
+          <option value="devFrontend">Dev Frontend</option>
+        </select>
+        <input type="submit" value="Add" />
+      </form>
+
+      <!-- Color Showcase -->
+      <div class="centerDiv showcaseParentDiv">
+        <p class="showcaseUXColor showcaseStyle">UX</p>
+        <p class="showcaseBackendColor showcaseStyle">Dev Backend</p>
+        <p class="showcaseFrontendColor showcaseStyle">Dev Frontend</p>
+      </div>
+    </header>
+
+    <!-- Scrum Board -->
+    <div class="centerDiv mainScrumBoardDiv">
+      <!-- To Do -->
+      <div class="scrumBoardBoxes">
+        <h2 class="scrumBoardTitle">To Do</h2>
+        <div class="overflow" id="toDo"></div>
+      </div>
+      <!-- In Progress -->
+      <div class="scrumBoardBoxes">
+        <h2 class="scrumBoardTitle">In Progress</h2>
+        <div class="overflow" id="inProgress"></div>
+      </div>
+      <!-- Done -->
+      <div class="scrumBoardBoxes">
+        <h2 class="scrumBoardTitle">Done</h2>
+        <div class="overflow" id="done"></div>
+      </div>
+    </div>
+  </body>
+</html>
