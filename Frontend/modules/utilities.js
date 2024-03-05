@@ -1,5 +1,6 @@
 import { fetchTasksAPI, deleteTaskAPI, patchTaskAPI } from "./fetchAPI.js";
 
+// Huvud funktionen för att skapa scrumBoard lapparna.
 function createScrumBoard({ task, category, status, assigned, id }) {
   const createDiv = document.createElement("div");
   const createTaskP = document.createElement("p");
@@ -52,6 +53,7 @@ function createScrumBoard({ task, category, status, assigned, id }) {
   }
 }
 
+// Funktion kallas i CreateScrumBoard Funktionen. Lägger till eventListeners till lapparna.
 function addToDoEventListener(id) {
   const form = document.getElementById(`${id}Form`);
   form.addEventListener("submit", async (event) => {
@@ -68,6 +70,7 @@ function addToDoEventListener(id) {
   });
 }
 
+// Funktion kallas i CreateScrumBoard Funktionen. Lägger till eventListeners till lapparna.
 function addInProgressEventListener(assigned, id) {
   const inputButton = document.getElementById(`${id}InputButton`);
   inputButton.addEventListener("click", async (event) => {
@@ -80,6 +83,7 @@ function addInProgressEventListener(assigned, id) {
   });
 }
 
+// Funktion kallas i CreateScrumBoard Funktionen. Lägger till eventListeners till lapparna.
 function addDoneEventListener(id) {
   const inputButton = document.getElementById(`${id}InputButton`);
   inputButton.addEventListener("click", async (event) => {
